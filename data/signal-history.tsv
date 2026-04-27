@@ -1,0 +1,6 @@
+url	signal_date	source	company	scale	status
+https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html	2026-03-31	tech_layoffs_recent	Oracle	20000-30000	added
+https://fortune.com/2026/02/27/block-jack-dorsey-ceo-xyz-stock-square-4000-ai-layoffs/	2026-02-27	tech_layoffs_recent	Block	4000	added
+https://www.entrepreneur.com/business-news/why-oil-gas-giant-chevron-is-laying-off-up-to-8000-workers/487059	2026-03-13	restructuring_news	Chevron	8000	added
+https://www.informationweek.com/it-staffing-careers/2026-tech-company-layoffs	2026-03-01	tech_layoffs_recent	Dell	11000	added
+https://startuparticle.com/technology/2026/04/tech-layoffs-in-2026-oracle-amazon-block-and-meta-slash-jobs-as-ai-reshapes-workforce/	2026-03-01	tech_layoffs_recent	Amazon	16000	added

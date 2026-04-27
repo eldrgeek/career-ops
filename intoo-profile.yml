@@ -1,0 +1,68 @@
+# INTOO Lead Generation — Company Profile
+# Like cv.md for career-ops, but for INTOO as the "candidate" selling to HR leaders.
+# Mira: fill in real case studies and confirm ICP parameters.
+
+company:
+  name: INTOO
+  tagline: "Compassionate career transitions — 2.5x faster job placement"
+  website: "intoo.com"
+
+value_props:
+  primary:
+    - "Instant live coach access — 7 days/week, no chatbots, no wait"
+    - "2.5x faster placement vs. industry average"
+    - "130+ countries, 2,100+ coaches, local language"
+    - "Real-time employer reporting dashboard"
+    - "Employer brand protection during reductions"
+  by_company_size:
+    mid_market: "Flexible per-employee pricing — no minimums"
+    enterprise: "Dedicated Client Success team + custom reporting"
+
+icp:
+  size_range: "500–10,000 employees"
+  best_verticals: [tech, finance, healthcare, manufacturing]
+  buyer_personas:
+    primary: ["CHRO", "Chief People Officer", "VP Human Resources"]
+    secondary: ["HR Business Partner", "Director Total Rewards", "VP Talent"]
+  geography: "North America primary, global available"
+  timing_sweet_spot: "0–30 days post-announcement"
+
+competitors:
+  - name: "Lee Hecht Harrison"
+    displacement_angle: "High-touch coaching vs. their scaled delivery model"
+  - name: "Challenger Gray & Christmas"
+    displacement_angle: "Technology platform + instant access vs. traditional scheduling"
+  - name: "Right Management"
+    displacement_angle: "Coach quality consistency and 7-day availability"
+  - name: "Randstad RiseSmart"
+    displacement_angle: "Human coaching first vs. AI-heavy approach"
+
+case_studies:
+  # Mira: fill in real case studies and confirm ICP parameters.
+  # Format: vertical, company_size, employees_transitioned, avg_weeks_to_placement, outcome
+  - vertical: tech
+    company_size: "TBD"
+    employees_transitioned: "TBD"
+    avg_weeks_to_placement: "TBD"
+    description: "TBD — provide: company size, employees transitioned, avg weeks to placement"
+  - vertical: finance
+    company_size: "TBD"
+    employees_transitioned: "TBD"
+    avg_weeks_to_placement: "TBD"
+    description: "TBD"
+  - vertical: healthcare
+    company_size: "TBD"
+    employees_transitioned: "TBD"
+    avg_weeks_to_placement: "TBD"
+    description: "TBD"
+
+deal_economics:
+  # Mira: confirm these estimates
+  per_seat_range: "$1,500–$5,000"
+  typical_deal_size: "$50K–$500K"
+  sales_cycle: "2–6 weeks from signal to contract"
+
+outreach_defaults:
+  calendly_link: "[PLACEHOLDER — Mira: insert real booking link]"
+  sdr_email: "[PLACEHOLDER — Mira: insert SDR email]"
+  demo_url: "[PLACEHOLDER — Mira: insert demo URL]"
