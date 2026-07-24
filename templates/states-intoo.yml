@@ -1,0 +1,15 @@
+# INTOO Lead Gen — Pipeline States
+# Mirrors templates/states.yml but for B2B prospect pipeline
+
+states:
+  - Signal:      "New trigger detected, not yet qualified"
+  - Qualified:   "Scored >= 3.5, active outreach approved"
+  - Contacted:   "First touch sent (LinkedIn/email)"
+  - Responded:   "Prospect replied"
+  - Meeting:     "Discovery call scheduled"
+  - Proposal:    "Proposal submitted"
+  - Negotiating: "In contract discussion"
+  - Won:         "Contract signed"
+  - Lost:        "Lost to competitor or no-decision"
+  - Nurture:     "Good ICP, wrong timing — follow up in 60 days"
+  - Watch:       "Pre-signal flag — monitoring, no announcement yet"

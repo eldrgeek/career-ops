@@ -1,0 +1,75 @@
+# INTOO Lead Gen — Signal Sources
+# Like portals.yml for career-ops, but for layoff/restructuring signals
+
+scan_history: "data/signal-history.tsv"
+
+signal_sources:
+
+  # -- REAL-TIME TRACKERS --
+  - name: layoffs_fyi
+    type: websearch
+    query: "site:layoffs.fyi 2026"
+    enabled: true
+    priority: high
+    notes: "Primary real-time tracker. Check weekly."
+
+  - name: trueup_layoffs
+    type: websearch
+    query: "site:trueup.io/layoffs 2026"
+    enabled: true
+    priority: high
+
+  # -- NEWS SIGNALS --
+  - name: tech_layoffs_recent
+    type: websearch
+    query: "tech company layoffs April 2026"
+    enabled: true
+    priority: high
+
+  - name: restructuring_news
+    type: websearch
+    query: '"workforce reduction" OR "restructuring" OR "right-sizing" site:businesswire.com OR site:prnewswire.com 2026'
+    enabled: true
+    priority: medium
+
+  - name: crunchbase_layoffs
+    type: websearch
+    query: "crunchbase.com layoffs 2026 startup"
+    enabled: true
+    priority: medium
+
+  # -- FINANCIAL SIGNALS (PRE-LAYOFF) --
+  - name: sec_8k_workforce
+    type: websearch
+    query: 'site:sec.gov 8-K "workforce reduction" OR "headcount reduction" 2026'
+    enabled: true
+    priority: high
+    notes: "Earliest signal — appears before press releases"
+
+  - name: earnings_restructuring
+    type: websearch
+    query: '"workforce optimization" OR "organizational redesign" earnings call Q1 2026'
+    enabled: true
+    priority: medium
+
+  # -- M&A SIGNALS (PREDICTIVE) --
+  - name: ma_announcements
+    type: websearch
+    query: "merger acquisition announced 2025 2026 tech finance workforce integration"
+    enabled: false
+    priority: low
+    notes: "M&A -> redundancy layoffs typically 6-12 months later. Enable for 60-day preview."
+
+  # -- COMPETITOR DISPLACEMENT --
+  - name: competitor_reviews_negative
+    type: websearch
+    query: '"Lee Hecht Harrison" OR "Right Management" OR "Challenger Gray" negative review 2025 2026 site:g2.com OR site:gartner.com'
+    enabled: false
+    priority: low
+    notes: "Unhappy competitor customers. Enable for displacement campaigns."
+
+icp_filter:
+  min_employees: 500
+  priority_verticals: [tech, finance, healthcare, manufacturing, retail, professional_services]
+  exclude_patterns: ["seed stage", "solo founder", "non-profit", "government", "startup <50"]
+  geography_primary: ["United States", "Canada", "United Kingdom", "Australia"]
